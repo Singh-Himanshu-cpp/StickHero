@@ -1,0 +1,2 @@
+prefWidth=360.0
+prefHeight=600.0

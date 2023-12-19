@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="360.0" style="-fx-background-color: #30f2cb;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stickhero.SecondaryController">
+   <children>
+<!--      <Rectangle arcHeight="5.0" arcWidth="5.0" height="200.0" layoutY="410.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />-->
+<!--      <Rectangle arcHeight="5.0" arcWidth="5.0" height="200.0" layoutX="177.0" layoutY="410.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />-->
+       <ImageView fx:id="backGround" fitHeight="600.0" fitWidth="360.0" preserveRatio="false">
+           <image>
+               <Image url="@background3.jpg" />
+           </image>
+       </ImageView>
+       <ImageView fx:id="cherry" fitHeight="30.0" fitWidth="30.0" layoutX="150.0" layoutY="420.0" preserveRatio="true">
+           <image>
+               <Image url="@cherry3.png" />
+           </image>
+       </ImageView>
+       <Label fx:id="score" layoutX="170.0" layoutY="20.0" text="0" textFill="WHITE">
+         <font>
+            <Font size="38.0" />
+         </font></Label>
+      <Rectangle fx:id="body" arcHeight="5.0" arcWidth="5.0" height="24.0" layoutX="71.0" layoutY="380.0" stroke="BLACK" strokeType="INSIDE" width="19.0" />
+      <Circle fx:id="eyes" fill="WHITE" layoutX="85.0" layoutY="386.0" radius="3.5" stroke="BLACK" strokeType="INSIDE" />
+      <Rectangle fx:id="band" arcHeight="5.0" arcWidth="5.0" fill="RED" height="4.0" layoutX="71.0" layoutY="382.0" stroke="RED" strokeType="INSIDE" width="19.0" />
+      <Rectangle fx:id="backLeg" arcHeight="5.0" arcWidth="5.0" height="15.0" layoutX="75.0" layoutY="400.0" stroke="BLACK" strokeType="INSIDE" width="5.0" />
+      <Rectangle fx:id="frontLeg" arcHeight="5.0" arcWidth="5.0" height="15.0" layoutX="82.0" layoutY="400.0" stroke="BLACK" strokeType="INSIDE" width="5.0" />
+       <Label fx:id="cherryNum" layoutX="300.0" layoutY="21.0" text="0" textFill="WHITE">
+           <font>
+               <Font size="18.0" />
+           </font>
+       </Label>
+       <ImageView fx:id="cherry1" fitHeight="30.0" fitWidth="30.0" layoutX="320.0" layoutY="20.0" preserveRatio="true">
+           <image>
+               <Image url="@cherry3.png" />
+           </image>
+       </ImageView>
+   </children>
+</AnchorPane>

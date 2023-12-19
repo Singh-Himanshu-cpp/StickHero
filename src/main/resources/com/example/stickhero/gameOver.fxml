@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="360.0" style="-fx-background-color: rgba(0,0,0,0.1);" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stickhero.GameOverController">
+   <children>
+      <Label layoutX="69.0" layoutY="51.0" prefWidth="100.0" text="GAME OVER!" AnchorPane.leftAnchor="69.0" AnchorPane.rightAnchor="51.0" AnchorPane.topAnchor="51.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+<!--      <Group layoutX="43.0" layoutY="353.0" />-->
+      <Button layoutX="141.0" layoutY="254.0" mnemonicParsing="false" style="-fx-background-color: #eb174c;" text="SHARE" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <VBox alignment="CENTER" layoutX="80.0" layoutY="110.0" prefHeight="110.0" prefWidth="200.0" style="-fx-background-color: fff; -fx-background-radius: 10;">
+         <children>
+            <Label style="-fx-text-alignment: center;" text="SCORE" />
+            <Label fx:id="score" text="0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label text="BEST" />
+            <Label fx:id="bestScore" text="0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Group layoutX="202.0" layoutY="353.0" />
+      <Group layoutX="122.0" layoutY="353.0" />
+      <Group layoutX="280.0" layoutY="353.0" />
+      <Button fx:id="playAgain" layoutX="145.0" layoutY="353.0" mnemonicParsing="false" onAction="#restartGame" prefHeight="50.0" prefWidth="70.0" style="-fx-background-radius: 10; -fx-background-color: rgba(0,0,0,0.3);" text="Play again" />
+      <Button fx:id="home" layoutX="51.0" layoutY="353.0" mnemonicParsing="false" onMouseClicked="#goToHomePage" prefHeight="50.0" prefWidth="70.0" style="-fx-background-radius: 10; -fx-background-color: rgba(0,0,0,0.3);" text="Home" />
+      <Button fx:id="Revive" layoutX="244.0" layoutY="353.0" mnemonicParsing="false" onAction="#revivePlayer" prefHeight="50.0" prefWidth="70.0" style="-fx-background-radius: 10; -fx-background-color: rgba(0,0,0,0.3);" text="Revive" />
+   </children>
+</AnchorPane>
